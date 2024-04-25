@@ -1,0 +1,8 @@
+<!-- <p>Parent Component</p>
+<button (click)="showChildMessage()">Show Child Message</button>
+<app-childcomponent></app-childcomponent> -->
+
+<p>Parent Component</p>
+<p>Parent Message: {{ parentMessage }}</p>
+
+<app-childcomponent [childMessage]="parentMessage" (childMethodEvent)="childMethodHandler()"></app-childcomponent>
